@@ -40,12 +40,12 @@ html, body{
 }
 
 .sky{
-    height: 40%;
+    height: 35%;
     background: #87ceeb;
 }
 
 .grass{
-    height: 30%;
+    height: 25%;
     background: #2e8b57;
 }
 
@@ -77,17 +77,23 @@ html, body{
     left: 0px;
     animation-name: drive;
     animation-duration: 3s;
-    animation-fill-mode: forwards;
-    animation-delay: 2s;
-    animation-iteration-count: inherit;
+    animation-fill-mode: both;
+    /* animation-delay: 2s; */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
 }
 
 .luigi{
     width: 14%;
     position: absolute;
-    top: -55px;
-    left: 0px;
-}
+    top: 85px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}  
 
 
 
@@ -95,7 +101,7 @@ html, body{
 /* KEYFRAMES */
 
 @keyframes drive{
-    from{ transform: translateX(0px); }
-    to{ transform:  translateX(700px); }
+    from{ transform: translateX(-200px); }
+    to{ transform:  translateX(1329px); }
 
 }
