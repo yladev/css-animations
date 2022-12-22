@@ -116,15 +116,6 @@ html, body{
     animation: wind 50s linear infinite reverse;
 }
 
-.cloud:nth-child(3){
-    width: 120px;
-    top: 130px;
-    animation: wind 10s linear infinite reverse;
-}
-
-
-
-
 /* KEYFRAMES */
 
 @keyframes drive{
