@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basket Example</title>
+    <link href="basket.css" rel="stylesheet" type="text/css">
+    <!-- <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script
+</head>
+<body class="basket">
+    <header>
+        <h1>Sports Clothing</h1>
+        <div class="basket-icon"><img src="./image/basket.jpg"></div>
+    </header>
+    <ul class="products">
+        <li>
+            <img src="./image/t-1.jpg">
+            <h2>Green T-Shirt</h2>
+            <button>Add to Basket</button>
+        </li>
+        <li>
+            <img src="./image/t-2.jpg">
+            <h2>Yellow T-Shirt</h2>
+            <button>Add to Basket</button>
+        </li>
+        <li>
+            <img src="./image/t-3.jpg">
+            <h2>Pink T-Shirt</h2>
+            <button>Add to Basket</button>
+        </li>
+        <li>
+            <img src="./image/t-1.jpg">
+            <h2>Green T-Shirt</h2>
+            <button>Add to Basket</button>
+        </li>
+        <li>
+            <img src="./image/t-2.jpg">
+            <h2>Yellow T-Shirt</h2>
+            <button>Add to Basket</button>
+        </li>
+        <li>
+            <img src="./image/t-3.jpg">
+            <h2>Pink T-Shirt</h2>
+            <button>Add to Basket</button>
+        </li>
+    </ul>
+    <script>
+        $("button").on("click", function(){
+            $(this).closest("li")
+              .find("img")
+              .clone()
+              .addClass("zoom")
+              .appendTo("body");
+            setTimeout(function(){
+                $(".zoom").remove();
+            }); 1000;
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </ul>
+    
+</body>
+</html>

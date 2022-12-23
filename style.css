@@ -75,13 +75,6 @@ html, body{
     position: absolute;
     top: -40px;
     left: 0px;
-    /* animation-name: drive;
-    animation-duration: 3s;
-    animation-fill-mode: both;
-    animation-delay: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear; */
-    /* animation-timing-function: cubic-bezier(.42, 0, .58, 1); */
     animation: drive 3s both infinite linear, 
                jump 0.3s 1.2s ease; 
 }
@@ -127,8 +120,8 @@ html, body{
 @keyframes wind {
     from{ left: -300px; }
     to{ left: 100%; }
-    
 }
+    
 
 @keyframes jump {
     0%{ top: -40px; }
